@@ -23,7 +23,6 @@
   position: fixed;
   box-sizing: border-box;
   color: #fff;
-  z-index: 3;
 }
 
 .navigation__bar_type_scroll {
@@ -51,7 +50,7 @@
   font-family: 'Roboto', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   text-decoration: none;
   color: #fff;

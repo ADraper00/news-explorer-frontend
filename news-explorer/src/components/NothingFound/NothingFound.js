@@ -1,10 +1,10 @@
 import "./NothingFound.css";
 
-const NothingFound = ({ title, text, nothingFoundIcom }) => {
+const NothingFound = ({ title, text, nothingFoundIcon }) => {
   return (
     <div className="nothing-found">
       <img
-        src={nothingFoundIcom}
+        src={nothingFoundIcon}
         alt="Nothing found icon"
         className="nothing-found__icon"
       ></img>

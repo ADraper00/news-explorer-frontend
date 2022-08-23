@@ -1,6 +1,6 @@
 import "./App.css";
-import nothingFoundIcom from "../../images/not-found.svg";
-import warningIcon from "../../images/warning.png";
+import nothingFoundIcon from "../../images/not-found.svg";
+import warningIcon from "../../images/warning.svg";
 import Navigation from "../Navigation/Navigation";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
@@ -75,7 +75,7 @@ const App = () => {
   };
 
   const handleSigninPopupClick = () => {
-    setFormValidity(true);
+    setFormValidity(false);
     setErrorMessage({});
     closeAllPopups();
     setPopupRedirectText("Sign up");
@@ -195,7 +195,7 @@ const App = () => {
                   <NothingFound
                     title={"Nothing found"}
                     text={"Sorry, but nothing matched your search terms."}
-                    nothingFoundIcom={nothingFoundIcom}
+                    nothingFoundIcon={nothingFoundIcon}
                   />
                 )}
               {serverError && (
@@ -204,7 +204,7 @@ const App = () => {
                   text={
                     "Sorry, something went wrong during the request. There may be a connection issue or the server may be down. Please try again later."
                   }
-                  nothingFoundIcom={warningIcon}
+                  nothingFoundIcon={warningIcon}
                 />
               )}
               {isLoading && <Preloader />}

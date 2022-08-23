@@ -1,5 +1,5 @@
 import "./Footer.css";
-import linkedinIcon from "../../images/linkedin_icon.png";
+import linkedinIcon from "../../images/linkedin_icon.svg";
 import githubIcon from "../../images/github.svg";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p className="footer__copyright">
-        © {year} NewsExplorer - Powered by News API
+        © {year} Supersite, Powered by News API
       </p>
       <nav className="footer__wrapper">
         <Link to={"/"} className="footer__link">
